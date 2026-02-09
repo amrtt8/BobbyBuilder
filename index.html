@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bobby Builder</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap">
+</head>
+
+
+<body>
+  <h1>Bobby Builder</h1>
+
+  <div id="app">
+    <div id="canvas-area">
+      <!-- stacked images → the creature -->
+      <div id="creature">
+        <img id="base-bobby" src="cat/bobbyy.png" alt="bobby" />
+        <img id="torso" src="parts/torso-0.png" alt="torso" />
+        <img id="headpiece" src="parts/headpiece-0.png" alt="headpiece" />
+        <img id="glasses" src="parts/glasses-0.png"  alt="glasses"  />
+        <img id="accessory" src="parts/accessory-0.png" alt="accessory" />
+        <img id="vice" src="parts/vice-0.png" alt="vice" />
+
+      </div>
+    </div>
+
+    
+     
+    <div id="controls">
+         <div class="control-group">
+        <button data-part="torso" class="prev">◀</button>
+        <span>Torso</span>
+        <button data-part="torso" class="next">▶</button>
+      </div>
+
+      <div class="control-group">
+        <button data-part="headpiece" class="prev">◀</button>
+        <span>Head piece</span>
+        <button data-part="headpiece" class="next">▶</button>
+      </div>
+
+      <div class="control-group">
+        <button data-part="glasses" class="prev">◀</button>
+        <span>Glasses</span>
+        <button data-part="glasses" class="next">▶</button>
+      </div>
+
+       <div class="control-group">
+        <button data-part="accessory" class="prev">◀</button>
+        <span>Accessories</span>
+        <button data-part="accessory" class="next">▶</button>
+      </div>
+
+      <div class="control-group">
+        <button data-part="vice" class="prev">◀</button>
+        <span>Vice</span>
+        <button data-part="vice" class="next">▶</button>
+      </div>
+        
+      <div class="control-group">
+        <button id="random" class="action-btn random">Randomize</button>
+      </div>
+      
+      <div class="control-group">
+        <button id="reset" class="action-btn reset">Reset</button>
+      </div>
+      
+      <div class="control-group">
+        <button id="save" class="action-btn save">Save Bobby</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
